@@ -1,30 +1,16 @@
-"""Mailbox model for connecting and interacting with desktop Outlook (via COM processes).
+"""Class for interacting with Desktop Outlook (via COM processes).
 
                              _______________________________________
                             |                                       |
                             |         *****INFORMATION*****         |
                             |_______________________________________|
-
-    _____NOTES_____
-    • System Solutions Account: "Sales/Service System Problems"
-    
-    • MBP Folder: "WFFD4/HDFD4 (MBP ORDERS)"
-    
-    • Work Assignment Folder (Mickey): "Mickey (Core)"
-    
-    
-    _____TO-DOs_____
-    • TODO: Add caching capabilities for searching for a folder (potentially for other reasons as well)
-    
-    • TODO: Add try/except catches for when there are no emails/no folder found, or for when program needs to wait for a few seconds to check again (using a while loop and a counter); error's to catch include ---> TypeError: 'NoneType' object is not iterable, 
-    
 """
 
 import psutil
 import win32com.client as client
 import subprocess as subpro
 import os
-import csv  # ---> TODO: ***REMOVE ONCE DONE TESTING***
+import csv  
 import tempfile  
 from pathlib import Path
 from typing import Union
@@ -205,8 +191,5 @@ class Outlook:
         
                 
 if __name__ == "__main__":
-    outlook = Outlook("Sales/Service System Problems")
-    # outlook.restart_outlook()
-    outlook.set_folder("Mickey (Core)")
-    print(outlook)
+    pass
         
