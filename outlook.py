@@ -1,9 +1,14 @@
-"""Class for interacting with Desktop Outlook (via COM processes).
-
+"""Class for interacting with Desktop Outlook. Objects of "Outlook" use Window's COM interface and processes, via the "pywin32" package.
                              _______________________________________
                             |                                       |
                             |         *****INFORMATION*****         |
                             |_______________________________________|
+
+
+__________INSTALLATION_REQUIREMENTS:
+• pywin32 package (most current)
+• psutil package (most current)
+ 
 """
 
 import psutil
